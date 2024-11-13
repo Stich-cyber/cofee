@@ -1,0 +1,730 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: inherit;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background-color: #14110E;
+}
+header{
+    height: 125px;
+    background-color: #1C1814;
+}
+.contanier{
+    margin: 0 auto;
+    width: 95%;
+}
+.contanier-1{
+    margin: 0 auto;
+    width: 78%;
+}
+.image{
+    background-image: url('./image/foto1.png');
+    height: 739px;
+    background-size: cover;
+    background-repeat: no-repeat    ;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    padding-top: 25px;
+}
+.text{
+    display: flex;
+    align-items: center;
+    gap: 48px;
+}
+.text li a{
+    text-transform: capitalize;
+    font-family: "Inter", sans-serif;
+    color: white;
+    transition: 0.2s ease-in-out;
+}
+.text li a:hover{
+    color: #C99E71;
+}
+.iconsfont{
+    transition: 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+    gap: 48px;
+}
+.iconsfont a i{
+    transition: 0.2s ease-in-out;
+    color: white;
+    font-size: 30px;
+}
+.iconsfont a i:hover{
+    color: #C99E71;
+}
+.part1{
+    display: flex;
+    position: relative;
+}
+.showcase-left p:nth-child(1){
+    color: white;
+    font-family: "Righteous", sans-serif;
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 93.6px;
+}
+.showcase-left p:nth-child(2){
+    font-family: "Urbanist", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 36px;
+    color: white;
+    width: 511px;
+}
+.showcase-left button{
+    padding: 24px 40px;
+    background-color: transparent;
+    border: 2px solid #C99E71;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #C99E71;
+    transition: 0.2s ease-in-out;
+    font-family: "Inter", sans-serif;
+}
+.showcase-left button:hover{
+    color: white;
+    border: 2px solid #C99E71;
+    background-color: #C99E71;
+}
+.showcase-left{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: start;
+    padding-top: 147px;
+}
+.showcase-right{
+    display: flex;
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    cursor: pointer;
+}
+.circle{
+    position: relative;
+    width: 70px;
+    height: 70px;
+    border: 1.5px solid white;
+    border-radius: 50%;
+}
+.circle i{
+    bottom: 33%;
+    right: 34%;
+    position: absolute;
+    font-size: 25px;
+    color: white;
+}
+.circle p{
+    position: absolute;
+    bottom: -30px;
+    left: -10px;
+    text-transform: uppercase;
+    font-family: Inter;
+    width: 100px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    color: white;
+}
+.part2{
+    margin-top: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cards p span{
+    font-size: 24px;
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    color: #C99E71;
+}
+.cards p{
+    display: flex;
+    gap: 12px;
+    font-size: 24px;
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    color: white;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: start;
+}
+.grid{
+    margin-top: 180px;
+    height: 635px;
+    display: grid;
+    grid-template-areas:
+    "c1 c2 c3 c3"
+    "c4 c2 c3 c3" 
+    ;
+    gap: 32px;
+}
+.grid-item1{
+    grid-area: c1;
+    padding-right: 230px;
+    background-image: url('./image/foto5.png');
+    background-repeat: no-repeat;
+}
+.grid-item2{
+    background-repeat: no-repeat;
+    padding-right: 230px;
+    background-image: url('./image/foto7.png');
+    grid-area: c2;
+}
+.grid-item3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    grid-area: c3;
+    background-color: #1C1814;
+}
+.grid-item4{
+    background-repeat: no-repeat;
+    padding-right: 230px;
+    background-image: url('./image/foto6.png');
+    grid-area: c4;
+}
+.grid-item3 p:nth-child(1){
+    font-family: "Urbanist", sans-serif;
+    color: #C99E71;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.6px;
+}
+.grid-item3 .i .ia p:nth-child(2){
+    font-family: "Righteous", sans-serif;
+    color: white;
+    font-weight: 400;
+    font-size: 48px;
+    width: 398px;
+    line-height: 62.4px;
+}
+.grid-item3 p:nth-child(2){
+    font-family: "Urbanist", sans-serif;
+    font-size: 16px;
+    width: 398px;
+    line-height: 28.8px;
+    color: white;
+    font-weight: 500;
+}
+.i{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 36px;
+}
+.ia{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 12px;
+}
+.part4{
+    margin-top: 56px;
+    display: flex;
+    align-items: center;
+    gap: 36px;
+    justify-content: space-between;
+}
+.text1{
+    display: flex;
+    margin-top: 140px;
+    margin-bottom: 12px;
+    justify-content: center;
+    font-family: "Urbanist", sans-serif;
+    color: #C99E71;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.6px;
+}
+.text2{
+    display: flex;
+    justify-content: center;
+    font-family: "Righteous", sans-serif;
+    color: white;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 62.4px;
+}
+.brazilbox{
+    background-color: #121315;
+    width: 366px;
+    height: 579px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 37px;
+}
+.brazilbox12{
+    background-color: #121315;
+    width: 366px;
+    height: 579px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 47px;
+}
+.brazilbox img{
+    margin-top: 48px;
+}
+.brazilbox p {
+    font-family: "Righteous", sans-serif;
+    text-transform: uppercase;
+    color: white;
+    font-size: 24px;
+    font-weight: 400;
+}
+.button{
+    display: flex;
+    align-items: center;
+    font-family: "Urbanist", sans-serif;
+    gap: 12px;
+    border: none;
+    color: white;
+    background-color: transparent;
+    padding: 13px 35px;
+    border: 1.5px solid #C99E71;
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.2s ease-in-out;
+}
+.button:hover{
+    border: 1.5px solid #C99E71;
+    background-color: #C99E71;
+    color: white;
+}
+.button i:hover{
+    color: white;
+}
+.button i{
+    color: white;
+    font-size: 18px;
+}
+.text4 i{
+    color: #C99E71;
+    font-size: 16px;
+}
+.text4{
+    font-family: "Urbanist", sans-serif;
+    padding-left: 13px;
+    text-transform: uppercase;
+    color: #C99E71;
+    font-size: 16px;
+    font-weight: 500;
+}
+.text3{
+    font-family: "Righteous", sans-serif;
+    text-transform: uppercase;
+    color: white;
+    font-size: 24px;
+    font-weight: 400;
+}
+.text5{
+    font-family: "Urbanist", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+}
+.text5 span{
+    font-family: "Urbanist", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color:#C99E71; 
+}
+.texts{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+}
+.brazilbox12 img{
+    margin-top: 48px;
+}
+.helperbutton{
+    display: flex;
+    justify-content: center;
+}
+.part5{
+    margin-top: 140px;
+}
+.maincase{
+    width: 1170px;
+    height: 530px;
+    background-color: #1C1814;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 160px;
+}
+.rightshowtextcase p:nth-child(1){
+    width: 501px;
+    font-family: "Righteous", sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 62.4px;
+    color: white;
+}
+.rightshowtextcase p:nth-child(2){
+    text-transform: capitalize;
+    width: 535px;
+    font-family: "Urbanist", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28.8px;
+    color: white;
+}
+.rightshowtextcase{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 36px;
+}
+.menucase{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 56px;
+}
+.menus{
+    width: 565px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    height: 120px;
+    border: 1px solid #32323D;
+    transition: 0.2s ease-in-out;
+}
+.menus:hover{
+    transform: scale(1.1);
+}
+.menutexts{
+    display: flex;
+    align-items: center;
+    gap: 87px;
+}
+.menutexts p:nth-child(1) {
+    font-family: "Righteous", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: white;
+}
+.menutexts p:nth-child(2){
+    font-size: 18px;
+    font-family: "Urbanist", sans-serif;
+    font-weight: 600;
+    color: #C99E71;
+}
+.customer1-1 p:nth-child(1){
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "Urbanist", sans-serif;
+    color: white;
+    width: 89px;
+}
+.customer1-1 p:nth-child(2){
+    font-family: "Urbanist", sans-serif;
+    font-weight: 500;
+    width: 108px;
+    font-size: 14px;
+    color: gray;
+}
+.text6 {
+    margin-top: 40px;
+    font-family: "Urbanist", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28.8px;
+    color: gray;
+    width: 332px;
+}
+.customermain{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.customers{
+    position: relative;
+    width: 565px;
+    height: 305px;
+    background-color: #1C1814;
+    display: flex;
+    justify-content: space-evenly;
+}
+.customer1-1{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 4px;
+}
+.customer1{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 28px;
+}
+.customer1 img{
+    margin-top: 40px;
+}
+.stars{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    bottom: 45px;
+    left: 400px;
+    color: #FAA61A;
+    font-size: 20px;
+}
+.progresor p{
+    font-family: "Urbanist", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color:#C99E71;
+    margin-bottom: 20px;    
+}
+.progres{
+    position: relative;
+    width: 120px;
+    height: 5px;
+    background-color: #1C1814;
+    border-radius: 3px;
+}
+.pr{
+    position: absolute;
+    width: 50px;
+    height: 5px;
+    background-color: #C99E71;
+    border-radius: 3px;
+}
+.arrow i:nth-child(1) {
+    font-size: 24px;
+    color: white;
+}
+.arrow i:nth-child(1) {
+    font-size: 24px;
+    color: black;
+}
+.square1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    border-radius: 50%;
+    height: 56px;
+    background-color: #121315;
+}
+.square2{
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    background-color: #C99E71;
+}
+.arrow{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.progarrow{
+    margin-top: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.dic{
+    display: flex;
+    justify-content: center;
+}
+.part8{
+    display: flex;
+    margin-top: 140px;
+    align-items: center;
+    justify-content: space-between;
+}
+.registr-case{
+    background-color: #1C1814;
+    width: 605px;
+    height: 652px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.text1-1{
+    font-family: "Urbanist", sans-serif;
+    color: #C99E71;
+    margin-bottom: 12px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.6px;
+}
+.text2-2{
+    font-family: "Righteous", sans-serif;
+    color: white;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 62.4px;
+    margin-bottom: 56px;
+}
+.registring{
+    display: flex;
+    align-items: center;
+    gap: 56px;
+    flex-direction: column;
+}
+.part8 form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 24px;
+}
+.part8 form input{
+    font-family: "Urbanist", sans-serif;
+    padding: 16px 250px 16px 20px;
+    background-color: #14110E;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+}
+.outlastestnew{
+    margin-top: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.news{
+    width: 366px;
+    height: 528px;
+    background-color: #1C1814;
+}
+.spantexts{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 159px;
+    margin-top: 20px;
+}
+.spantexts span{
+    font-family: "Urbanist", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.6px;
+    color: #C99E71;
+}
+.spantexts p{
+    font-family: "Urbanist", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.6px;
+    color: white;
+}
+.news p:nth-child(3){
+    margin-left: 24px;
+    margin-top: 14px;
+    font-family: "Righteous", sans-serif;
+    color: white;
+    line-height: 30px;
+    font-weight: 400;
+    font-size: 20px;
+}
+.news p:nth-child(4){
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: "Urbanist", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.6px;
+    color: #C99E71;
+    margin-left: 24px;
+    margin-top: 33px;
+}
+.footer1{
+    display: flex;
+    align-items: center;
+    gap: 36px;
+}
+.footermain{
+    display: flex;
+    align-items: center;
+}
+.footermain ul{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.footermain ul li a{
+    font-family: "Urbanist", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    transition: 0.2s ease-in-out;
+}
+.footermain ul li a:hover{
+    color: #C99E71;
+}
+.footer1 input{
+    position: relative;
+    padding: 25px 182px 25px 28px;
+    font-family: "Urbanist", sans-serif;
+    font-size: 16px;
+    color:rgba(255, 255, 255, 0.8);
+    border-radius: 36px;
+    background-color: #1C1814;
+    border: none;
+    font-weight: 500;
+}
+#i{
+    box-shadow: 10px 22px 44px 0px rgba(201,158,113,0.62);
+    -webkit-box-shadow: 10px 22px 44px 0px rgba(201,158,113,0.62);
+    -moz-box-shadow: 10px 22px 44px 0px rgba(201,158,113,0.62);
+}
+form{
+    position: relative;
+}
+.square3{
+    right: 10px;
+    bottom: 7px;
+    position: absolute;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    background-color: #C99E71;
+}
+footer{
+    margin-top: 170px;
+}
+.creator{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90px;
+    margin-top: 98px;
+    background-color: rgba(28, 24, 20, 1);
+}
+.creator p{
+    color:rgba(255, 255, 255, 0.8);
+    font-family: "Urbanist", sans-serif;
+    font-size: 14px;
+}
